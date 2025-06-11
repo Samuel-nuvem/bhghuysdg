@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +13,7 @@
 
 <body>
         <script>
-            var nome = ["Samuel","Mário","Luige","Matheus","Luís","Ruan"];
+            var nome = ["Samuel","Mário","Luige"];
             var turma = ["1° Ano","2° Ano","3° Ano"];
             var tri1 = [7, 5, 7];
             var tri2 = [8, 6, 7];
@@ -25,7 +26,9 @@
                 document.write("<table border=1>");
                     for(i = 0; i <nome.length; i++){
 
-                        if(nome[i] == nomeComparado){
+                        if(nome[i] .indexOf(nomeComparado) !== -1 ||
+                        turma[i].indexOf(turmaComparado) !== -1)
+                        {
                             document.write("<tr>");
                                 document.write("<td>");
                                     document.write("Nome: " + nome[i]);
@@ -73,7 +76,15 @@
             <td width=80 align="center" colspan="4" bgcolor="#9370DB">
                 <input type="button" NAME="botao" VALUE="localizar" onclick="seleciona(LocalizaLista)">
             </td>    
-            </tr>
+            </tr><!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset='utf-8'>
+                <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+                <title>Localizador</title>
+                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+                <script src='main.js'></script>
 
          </table>
         </form>
